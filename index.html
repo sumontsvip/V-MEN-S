@@ -1,0 +1,142 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>V MEN'S — Power of Five, Style of One</title>
+  <meta name="description" content="V MEN'S — Luxury menswear. Power of Five, Style of One." />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{--bg:#000;--gold:#c69c2f;--muted:#bfa76e;--white:#fff}
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Montserrat,system-ui,-apple-system,Segoe UI,Roboto,'Helvetica Neue',Arial;color:var(--white);background:var(--bg);-webkit-font-smoothing:antialiased}
+    .container{max-width:1100px;margin:0 auto;padding:30px}/* Header */
+header{padding:28px 0;display:flex;align-items:center;justify-content:space-between}
+.logo{display:flex;align-items:center;gap:14px}
+.logo .v{font-family:'Playfair Display',serif;font-size:44px;color:var(--gold);font-weight:700;letter-spacing:1px}
+.logo .word{font-weight:700;font-size:18px;color:var(--gold)}
+nav a{color:rgba(255,255,255,0.85);text-decoration:none;margin-left:20px;font-weight:600}
+
+/* Hero */
+.hero{display:grid;grid-template-columns:1fr 480px;gap:48px;align-items:center;padding:40px 0}
+.hero h1{font-family:'Playfair Display',serif;font-size:48px;margin:0 0 14px;color:var(--gold);line-height:1}
+.hero p{color:rgba(255,255,255,0.8);margin:0 0 22px}
+.cta{display:inline-block;padding:12px 22px;background:var(--gold);color:#000;font-weight:700;border-radius:6px;text-decoration:none}
+.mock{background:linear-gradient(180deg,#111 0%,#000 100%);border-radius:8px;padding:28px;display:flex;align-items:center;justify-content:center}
+.mock img{max-width:100%;height:auto}
+
+/* Features */
+.features{display:flex;gap:18px;margin:36px 0}
+.card{background:#080808;padding:22px;border-radius:8px;flex:1}
+.card h3{margin:0 0 8px;color:var(--gold)}
+.card p{margin:0;color:rgba(255,255,255,0.7)}
+
+/* Products grid */
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:20px;margin:26px 0}
+.product{background:#0b0b0b;padding:16px;border-radius:10px;text-align:center}
+.product img{width:100%;height:200px;object-fit:cover;border-radius:8px}
+.product h4{margin:12px 0 6px;color:var(--gold)}
+.product p{margin:0;color:rgba(255,255,255,0.75)}
+.price{margin-top:10px;font-weight:700}
+
+footer{border-top:1px solid rgba(255,255,255,0.03);padding:30px 0;margin-top:40px;color:rgba(255,255,255,0.6)}
+
+/* Responsive */
+@media (max-width:980px){.hero{grid-template-columns:1fr;}.logo .v{font-size:34px}.hero h1{font-size:36px}}
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo">
+        <div class="v">V</div>
+        <div>
+          <div class="word">V MEN'S</div>
+          <div style="font-size:11px;color:var(--muted);margin-top:4px">Power of Five, Style of One</div>
+        </div>
+      </div>
+      <nav>
+        <a href="#collection">Collection</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header><section class="hero">
+  <div>
+    <h1>Luxury Menswear — Timeless. Bold. Royal.</h1>
+    <p>V MEN'S brings premium fabrics, sharp tailoring and a signature golden identity. Wear the crown — dress like a king.</p>
+    <a class="cta" href="#collection">Shop Collection</a>
+  </div>
+  <div class="mock">
+    <!-- use your tshirt mockup image here -->
+    <img src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder" alt="t-shirt mockup">
+  </div>
+</section>
+
+<section class="features">
+  <div class="card">
+    <h3>Premium Quality</h3>
+    <p>Only the finest cotton and finishing. Quality you can feel.</p>
+  </div>
+  <div class="card">
+    <h3>Limited Drops</h3>
+    <p>Exclusive small-batch releases. Stay rare, stay royal.</p>
+  </div>
+  <div class="card">
+    <h3>Free Shipping</h3>
+    <p>Free worldwide shipping for first orders above $99.</p>
+  </div>
+</section>
+
+<section id="collection">
+  <h2 style="color:var(--gold);margin:6px 0 14px;font-family:'Playfair Display',serif">Featured Collection</h2>
+  <div class="grid">
+    <div class="product">
+      <img src="https://images.unsplash.com/photo-1520975914016-73f4b6b4d4c2?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder" alt="product">
+      <h4>Gold Crown Tee</h4>
+      <p>Black tee with gold V-crown print.</p>
+      <div class="price">$29</div>
+    </div>
+    <div class="product">
+      <img src="https://images.unsplash.com/photo-1541099649105-f69ad21f3246?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder" alt="product">
+      <h4>Royal Jacket</h4>
+      <p>Slim fit with premium lining.</p>
+      <div class="price">$199</div>
+    </div>
+    <div class="product">
+      <img src="https://images.unsplash.com/photo-1520975914016-73f4b6b4d4c2?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder" alt="product">
+      <h4>Classic Polo</h4>
+      <p>Minimal logo, max comfort.</p>
+      <div class="price">$49</div>
+    </div>
+  </div>
+</section>
+
+<section id="about" style="margin-top:30px">
+  <h2 style="color:var(--gold);font-family:'Playfair Display',serif">About V MEN'S</h2>
+  <p style="max-width:760px;color:rgba(255,255,255,0.8)">V MEN'S is a collective of five design-minded creators. We believe in heritage tailoring, contemporary silhouettes and the power of small-batch exclusivity. Our pieces are crafted to make you look sharp and feel confident.</p>
+</section>
+
+<footer id="contact">
+  <div style="display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap">
+    <div style="flex:1">
+      <h3 style="color:var(--gold);margin-top:0">Contact</h3>
+      <p style="margin:6px 0;color:rgba(255,255,255,0.8)">Email: hello@vmens.com<br>Instagram: @vmens_official</p>
+    </div>
+    <div style="flex:1">
+      <h3 style="color:var(--gold);margin-top:0">Newsletter</h3>
+      <p style="margin:6px 0;color:rgba(255,255,255,0.8)">Get exclusive drops & offers</p>
+      <form onsubmit="event.preventDefault();alert('Subscribed!');" style="display:flex;gap:8px;max-width:360px">
+        <input type="email" placeholder="Your email" required style="flex:1;padding:10px;border-radius:6px;border:0;outline:none">
+        <button style="background:var(--gold);border:none;padding:10px 14px;border-radius:6px;font-weight:700">Subscribe</button>
+      </form>
+    </div>
+  </div>
+  <div style="margin-top:18px;color:rgba(255,255,255,0.45);font-size:13px">© <span id="year"></span> V MEN'S — All rights reserved.</div>
+</footer>
+
+  </div>  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script></body>
+</html>
